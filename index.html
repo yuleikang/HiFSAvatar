@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="HiFSAvatar:High-Fidelity and Stylized Gaussian Head Avatars with Geometry-Aware Enhancement - Yulei Kang">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="Sun Yat-Sen University">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="HiFSAvatar:High-Fidelity and Stylized Gaussian Head Avatars with Geometry-Aware Enhancement">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="KEYWORD1">
+  <meta property="article:tag" content="KEYWORD2">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="PAPER_TITLE">
+  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
+  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>HiFSAvatar:High-Fidelity and Stylized Gaussian Head Avatars with Geometry-Aware Enhancement - Yulei Kang | Academic Research</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "PAPER_TITLE",
+    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- More Works Dropdown -->
+  <!-- <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+      <i class="fas fa-flask"></i>
+      More Works
+      <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>More Works from Our Lab</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="works-list">
+        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 1</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2024</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 2</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 3</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div> -->
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title">HiFSAvatar:High-Fidelity and Stylized Gaussian Head Avatars with Geometry-Aware Enhancement</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your paper authors and their personal links --> 
+              <span class="author-block">
+                <a href="https://dblp.org/pid/414/9814.html" target="_blank">Yulei Kang</a><sup></sup>,</span>
+                <span class="author-block">
+                  <a href="https://www.isee-ai.cn/~hujianfang/" target="_blank">Jian-Fang Hu</a><sup></sup>,</span>
+                  <span class="author-block">
+                    <a href="https://tmliang.github.io/" target="_blank">Tianming Liang</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://dblp.org/pid/260/6382" target="_blank">Beihao Xia</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.sustech.edu.cn/en/faculties/zhangjianguo.html" target="_blank">Jianguo Zhang</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=AwqDDGoAAAAJ&hl=en" target="_blank">Wei-Shi Zheng</a>
+                  </span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <!-- TODO: Replace with your institution and conference/journal info -->
+                    <span class="author-block">Sun Yat-Sen University
+                      <br>
+                    </span>
+                    <!-- TODO: Remove this line if no equal contribution -->
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- TODO: Update with your arXiv paper ID -->
+                      <!-- <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <!-- TODO: Add your supplementary material PDF or remove this section -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code will be released soon</span>
+                  </a>
+                </span>
+
+                <!-- TODO: Update with your arXiv paper ID -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <source src="static/images/primary_01.png" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End paper abstract -->
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Reconstructing photorealistic and animatable 3D head avatars from monocular image sequences is a valuable yet highly challenging task. The primary difficulty lies in capturing both generic head deformations caused by variations in expression and pose, and non-generic head changes, such as hair and glasses, which require accurate modeling of individual attributes. While previous methods achieve impressive results by integrating 3D Gaussian Splatting with a parametric head model, the quality of head reconstruction is still suffer from the inaccurate geometric deformations and the lack of local geometry-aware modeling. Moreover, these methods cannot perform style transfer on discrete Gaussian primitives of head avatars, limiting the potential application of this task.
+To address these challenges, we propose HiFSAvatar, a novel framework that reconstructs high-fidelity, stylized 3D Gaussian head avatars through geometry-aware enhancement. HiFSAvatar employs learnable personalized blendshapes and features to improve the flexibility and accuracy of geometric deformations. Furthermore, we introduce an anchor-driven strategy for local geometric optimization of Gaussian attributes, which extracts local geometric cues via a local feature aggregation network to enhance dynamic head details. To achieve stylization, we propose a color distribution and style feature alignment strategy, ensuring both faithful style transfer and geometric realism. Extensive experiments demonstrate the effectiveness of our geometry-aware modeling approach, which significantly enhances the reconstruction quality and outperforms previous methods in both accuracy and stylization.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="title is-3" style="text-align: center;">Method</h2>
+  <div class="figure-wrap">
+    <img src="./static/images/primary_01.png" alt="Model Diagram">
+  </div>
+
+  <div class="method-desc-wrap content has-text-justified">
+    <div class="method-desc">
+      <p>
+        Overview of the proposed HiFSAvatar: Given an input image, FLAME tracking first estimates
+        the pose $\theta$, expression $\psi$, and shape $\beta$ parameters before training.
+        These parameters are then refined using a learnable feature $f_{pg}$, and fed into a
+        geometry deformation process that optimized with learnable shape offsets ($\Delta X_S$)
+        and blendshape bases ($\Delta P$, $\Delta E$) to generate the deformed mesh $X_P$.
+        Based on $X_P$, we compute the geometric factors ($\mathbf{n}_f$, $\mathbf{s}_f$,
+        $\mathbf{r}_f$), and initialize the Gaussians on $X_P$ using a predefined UV mapping
+        function $\mathcal{F}_{uv}$, including position ${\mu}_d$, rotation $\mathbf{r}_d$,
+        scale $\mathbf{s}_d$, opacity $\mathbf{o}$, and color $\mathbf{c}$.
+        The geometric attributes of the Gaussians are further refined through the Anchor-driven
+        Local Geometric Enhancement module, and the final render is obtained via differentiable
+        rasterization. To achieve stylization, the color attribute is further optimized to adapt
+        to different styles.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="" alt="First research result visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3" style="text-align: center;">Self Reenactment (Reconstruction)</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <!-- TODO: Replace with your YouTube video ID -->
+            <iframe src="./static/videos/HIFSAvatar_v2.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3" style="text-align: center;">Cross Reenactment</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <!-- TODO: Replace with your YouTube video ID -->
+            <iframe src="./static/videos/cross_reenactment.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="text-align: center;">Stylized Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/edit_bala_80.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/edit_biden_72.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/edit_marcel_36.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video4" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/edit_nf_01_90.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video5">
+          <video poster="" id="video5" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/edit_wojtek_1_59.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
+  title={Your Paper Title Here},
+  author={First Author and Second Author and Third Author},
+  journal={Conference/Journal Name},
+  year={2024},
+  url={https://your-domain.com/your-project-page}
+}</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
